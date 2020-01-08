@@ -41,7 +41,7 @@ Success! The next few lines on the scikit-learn instructions work smoothly until
 
 <img src="/images/jan7-4.png" width="800"/><br><br>
 
-Apparently, I needed to install gcc, also known as the GNU Compiler Collection. To do so, I first tried to brew install it, which gave me an error that gcc needed to be installed as a binary package and built from the source. However, it also told me how to install command line tools (xcode), which I promptly did. Finally, I found via Google an [old instruction manual] (http://www.cs.millersville.edu/~gzoppetti/InstallingGccMac.html) for downloading gcc on a mac. These instructions worked for the most part. Since I had already downloaded xcode, I first downloaded the correct version of MacPorts using the .pkg installer and then sudo port installed the most recent version of gcc (gcc9 in my case). Then I was finally able to install the developer version of sci-kit learn. Yay!<br><br>
+Apparently, I needed to install gcc, also known as the GNU Compiler Collection. To do so, I first tried to brew install it, which gave me an error that gcc needed to be installed as a binary package and built from the source. However, it also told me how to install command line tools (xcode), which I promptly did. Finally, I found via Google an [old instruction manual](http://www.cs.millersville.edu/~gzoppetti/InstallingGccMac.html) for downloading gcc on a mac. These instructions worked for the most part. Since I had already downloaded xcode, I first downloaded the correct version of MacPorts using the .pkg installer and then sudo port installed the most recent version of gcc (gcc9 in my case). Then I was finally able to install the developer version of sci-kit learn. Yay!<br><br>
 
 <img src="/images/jan7-5.png" width="800"/><br><br>
 
@@ -131,13 +131,13 @@ $ pip install cython pytest pytest-cov flake8
 
 $ xcode-select --install
 
-24) IF YOU HAVE A MAC: Download and click through the package installer of the correct version of MacPorts from [here] (https://www.macports.org/install.php) (Note: this will also take a while, ~ 1 hour)
+24) IF YOU HAVE A MAC: Download and click through the package installer of the correct version of MacPorts from [here](https://www.macports.org/install.php) (Note: this will also take a while, ~ 1 hour)
 
 25) Open a *new* Terminal window
 
 $ sudo port install gcc9
 
-Note: Only gcc9 and above support the version of xcode you downloaded in step 23. Also, gcc9 is the most recent release as of 01/2020. Check out the [gcc docs] (https://gcc.gnu.org/) for more information.
+Note: Only gcc9 and above support the version of xcode you downloaded in step 23. Also, gcc9 is the most recent release as of 01/2020. Check out the [gcc docs](https://gcc.gnu.org/) for more information.
 
 26) Install scikit-learn in editable mode:
 
