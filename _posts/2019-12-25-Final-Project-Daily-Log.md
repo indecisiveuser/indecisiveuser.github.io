@@ -23,13 +23,13 @@ Below is a log of my daily progress, including:
 **January 7th**<br>
 Today I tried to locally install scikit-learn. TL;DR: it was a mess, but I finally did it!<br><br>
 
-Finding the instructions were easy enough: I just had to visit the scikit-learn GitHub page and then click on the page for 'contributers.' For reference, [here] (https://scikit-learn.org/stable/developers/contributing.html) are the instructions that I followed.<br><br>
+Finding the instructions were easy enough: I just had to visit the scikit-learn GitHub page and then click on the page for 'contributers.' For reference, [here](https://scikit-learn.org/stable/developers/contributing.html) are the instructions that I followed.<br><br>
 
 It looked easy enough. I already had a GitHub account, and was familiar with 'forking' projects. Plus, I thought I would only have to write 8 or so lines of code to complete the download (I was really wrong). So, I tried the first line. It didn't work.<br><br>
 
 <img src="/images/jan7-1.png" width="800"/><br><br>
 
-Since the repository definately exists, I turned to the other error, which about the publickey. Apparently, in order to access the repo, I need to create my own (and thus private) key. These keys are known as Secure Shell (or SSH) and I had never heard of them before this instance. Yipee. Anyways, I managed to find the solution to this problem the GitHub website, which has a nice step-by-step on how to generating your own SSH key [here] (https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and adding it to your GitHub account [here] (https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account). Adding it to my GitHub account was very straightforward. I checked to see if GitHub now recognises it...<br><br>
+Since the repository definately exists, I turned to the other error, which about the publickey. Apparently, in order to access the repo, I need to create my own (and thus private) key. These keys are known as Secure Shell (or SSH) and I had never heard of them before this instance. Yipee. Anyways, I managed to find the solution to this problem the GitHub website, which has a nice step-by-step on how to generating your own SSH key [here](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and adding it to your GitHub account [here](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account). Adding it to my GitHub account was very straightforward. I checked to see if GitHub now recognises it...<br><br>
 
 <img src="/images/jan7-2.png" width="800"/><br><br>
 
