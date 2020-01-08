@@ -27,23 +27,23 @@ Finding the instructions were easy enough: I just had to visit the scikit-learn 
 
 It looked easy enough. I already had a GitHub account, and was familiar with 'forking' projects. Plus, I thought I would only have to write 8 or so lines of code to complete the download (I was really wrong). So, I tried the first line. It didn't work.<br><br>
 
-<img src="/images/jan7-1.jpeg" width="800"/><br><br>
+<img src="/images/jan7-1.png" width="800"/><br><br>
 
 Since the repository definately exists, I turned to the other error, which about the publickey. Apparently, in order to access the repo, I need to create my own (and thus private) key. These keys are known as Secure Shell (or SSH) and I had never heard of them before this instance. Yipee. Anyways, I managed to find the solution to this problem the GitHub website, which has a nice step-by-step on how to generating your own SSH key [here] (https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and adding it to your GitHub account [here] (https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account). Adding it to my GitHub account was very straightforward. I checked to see if GitHub now recognises it...<br><br>
 
-<img src="/images/jan7-2.jpeg" width="800"/><br><br>
+<img src="/images/jan7-2.png" width="800"/><br><br>
 
 Nope. But when I open up a new Terminal window: <br><br>
 
-<img src="/images/jan7-3.jpeg" width="800"/><br><br>
+<img src="/images/jan7-3.png" width="800"/><br><br>
 
 Success! The next few lines on the scikit-learn instructions work smoothly until I tried to install sci-kit learn. In a sea of red errors, here is what I found:<br><br>
 
-<img src="/images/jan7-4.jpeg" width="800"/><br><br>
+<img src="/images/jan7-4.png" width="800"/><br><br>
 
 Apparently, I needed to install gcc, also known as the GNU Compiler Collection. To do so, I first tried to brew install it, which gave me an error that gcc needed to be installed as a binary package and built from the source. However, it also told me how to install command line tools (xcode), which I promptly did. Finally, I found via Google an [old instruction manual] (http://www.cs.millersville.edu/~gzoppetti/InstallingGccMac.html) for downloading gcc on a mac. These instructions worked for the most part. Since I had already downloaded xcode, I first downloaded the correct version of MacPorts using the .pkg installer and then sudo port installed the most recent version of gcc (gcc9 in my case). Then I was finally able to install the developer version of sci-kit learn. Yay!<br><br>
 
-<img src="/images/jan7-5.jpeg" width="800"/><br><br>
+<img src="/images/jan7-5.png" width="800"/><br><br>
 
 For brevity, a compilation of the instructions that worked for me:
 
