@@ -167,7 +167,7 @@ Today, I mostly read the scikit-learn docs with a focus on the ShuffleSplit clas
 
 <img src="/images/jan8.png" width="800"/><br><br>
 
-If I can pass a shuffle parameter into this function, it can be passed into the Kfold/StratifiedKfold cross validator, _which both already have a shuffle method_.
+If I can pass a shuffle parameter into this function, it can be passed into the Kfold/StratifiedKfold cross validator, _which both already have shuffle methods_.
 However, I'm a bit confused regarding the old vs new style cv objects. What is the difference?
 
 Tomorrow, I'm planning to start coding :)
