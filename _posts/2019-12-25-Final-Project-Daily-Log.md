@@ -89,6 +89,7 @@ Host *
   UseKeychain yes
   IdentityFile ~/.ssh/id_rsa
 
+
 into the file.
 
 12) Press esc and then type :wq and then press enter
@@ -160,7 +161,16 @@ and start making changes. Always use a feature branch. It’s good practice to n
 
 Tomorrow, I'm excited to explore sci-kit learn!
 
-**January 8th**
+**January 8th**<br>
+
+Today, I mostly read the scikit-learn docs with a focus on the ShuffleSplit class, the StratifiedShuffleSplit class, and the cross validation function. While doing so, I attempted to find a way add a shuffle method to the cross_validation function. The place I am most excited about is the check_cv function located in \_split.py located under model.selection. Here is a screenshot of the scikit-learn code:<br><br>
+
+<img src="/images/jan8.png" width="800"/><br><br>
+
+If I can pass a shuffle parameter into this function, it can be passed into the Kfold cross validator, _which already has a shuffle method_.
+However, I'm a bit confused regarding the old vs new style cv objects. What is the difference?
+
+Tomorrow, I'm planning to start coding :)
 
 **January 9th**
 
