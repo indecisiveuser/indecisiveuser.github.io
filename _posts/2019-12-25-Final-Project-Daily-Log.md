@@ -21,6 +21,7 @@ Below is a log of my daily progress, including:
 4.) What my goals are for tomorrow
 
 **January 7th**<br>
+
 Today I tried to locally install scikit-learn. TL;DR: it was a mess, but I finally did it!<br><br>
 
 Finding the instructions were easy enough: I just had to visit the scikit-learn GitHub page and then click on the page for 'contributers.' For reference, [here](https://scikit-learn.org/stable/developers/contributing.html) are the instructions that I followed.<br><br>
@@ -29,7 +30,7 @@ It looked easy enough. I already had a GitHub account, and was familiar with 'fo
 
 <img src="/images/jan7-1.png" width="800"/><br><br>
 
-Since the repository definately exists, I turned to the other error, which about the publickey. Apparently, in order to access the repo, I need to create my own (and thus private) key. These keys are known as Secure Shell (or SSH) and I had never heard of them before this instance. Yipee. Anyways, I managed to find the solution to this problem the GitHub website, which has a nice step-by-step on how to generating your own SSH key [here](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and adding it to your GitHub account [here](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account). Adding it to my GitHub account was very straightforward. I checked to see if GitHub now recognises it...<br><br>
+Since the repository definitely exists, I turned to the other error about the publickey. Apparently, in order to access the repo, I needed to create my own (and thus private) key. These keys are known as Secure Shell (or SSH) and I had never heard of them before this instance. Yipee. Anyways, I managed to find the solution to this problem on the GitHub website, which has nice step-by-step instructions on [generating your own SSH key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [adding it to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account). Adding it to my GitHub account was very straightforward. I checked to see if GitHub recognises my new SSH key...<br><br>
 
 <img src="/images/jan7-2.png" width="800"/><br><br>
 
@@ -37,7 +38,7 @@ Nope. But when I open up a new Terminal window: <br><br>
 
 <img src="/images/jan7-3.png" width="800"/><br><br>
 
-Success! The next few lines on the scikit-learn instructions work smoothly until I tried to install sci-kit learn. In a sea of red errors, here is what I found:<br><br>
+Success! The next few lines on the scikit-learn instructions worked without error until I tried to install sci-kit learn. In a sea of red errors, here is what I found:<br><br>
 
 <img src="/images/jan7-4.png" width="800"/><br><br>
 
@@ -132,7 +133,7 @@ $ pip install cython pytest pytest-cov flake8
 
 $ xcode-select --install
 
-24) IF YOU HAVE A MAC: Download and click through the package installer of the correct version of MacPorts from [here](https://www.macports.org/install.php) (Note: this will also take a while, ~ 1 hour)
+24) IF YOU HAVE A MAC: Download and click through the package installer of the correct version of MacPorts[here](https://www.macports.org/install.php) (Note: this will also take a while, ~ 1 hour)
 
 25) Open a *new* Terminal window
 
@@ -173,6 +174,8 @@ However, I'm a bit confused regarding the old vs new style cv objects. What is t
 Tomorrow, I'm planning to start coding :)
 
 **January 9th**
+
+Today, I started working on the check_cv class by adding a shuffle parameter. When the value set for shuffle is a boolean, I believe my modifications will work. However, I'm not so sure about the exceptions (eg when shuffle is not a boolean or when cv is not a type that will work). I will have to start testing tomorrow... Also, I'm not convinced that check_cv is the only place cross validates the data, so tomorrow I'm going to look at the cross_validation function a bit more closely to try to find any additional ways that I can add a shuffle method there.
 
 **January 10th**
 
