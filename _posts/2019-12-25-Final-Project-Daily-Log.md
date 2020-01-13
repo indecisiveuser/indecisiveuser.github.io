@@ -175,9 +175,11 @@ Tomorrow, I'm planning to start coding :)
 
 **January 9th**
 
-Today, I started working on the check_cv class by adding a shuffle parameter. When the value set for shuffle is a boolean, I believe my modifications will work. However, I'm not so sure about the exceptions (eg when shuffle is not a boolean or when cv is not a type that will work). I will have to start testing tomorrow... Also, I'm not convinced that check_cv is the only place cross validates the data, so tomorrow I'm going to look at the cross_validation function a bit more closely to try to find any additional ways that I can add a shuffle method there.
+Today, I started working on the check_cv class by adding a shuffle parameter. When the value set for shuffle is a boolean, I believe my modifications will work. However, I'm not so sure about the exceptions (eg when shuffle is not a boolean or when cv is not a type that will work). I will have to start testing tomorrow...Also, I'm not convinced that check_cv is the only place cross validates the data, so tomorrow I'm going to look at the cross_validation function a bit more closely to try to find any additional ways that I can add a shuffle method there.
 
 **January 10th**
+
+Talking to Lauren about my plans today was very useful to me. I completely agree with her comments that before trying to add a shuffle method, I should probably start contributing in other, less noticable ways to build trust and also gain a greater understanding of sci-kit learn and open-source contributing in general. Therefore, I have taken a look at [this link](https://github.com/scikit-learn/scikit-learn/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) which lists the issues that are good for first-time contributers. I think I may try to 'claim' one Monday (the 13th) and begin. I just hope that I will have something to show for the presentation during finals....
 
 **January 13th**
 
