@@ -183,11 +183,11 @@ Talking to Lauren about my plans today was very useful to me. I completely agree
 
 **January 13th**
 
-Today, I started work on fixing some documentation issues mentioned in the 'good first issue' category of sci-kit learn's issues tab. The link to this issues is [here](https://github.com/scikit-learn/scikit-learn/issues/15761). I worked on the \_.validation under model_selection to streamline documentation, specifically taking away 'optional' in the docs. I am hoping to finish this up tomorrow, and hopefully submit a Pull Request.<br><br>
+Today, I started work on fixing some documentation issues mentioned in the 'good first issue' category of sci-kit learn's issues tab. The link to this issues is [here](https://github.com/scikit-learn/scikit-learn/issues/15761). I worked on the \_validation under model_selection to streamline documentation, specifically taking away 'optional' in the docs. I am hoping to finish this up tomorrow, and hopefully submit a Pull Request.<br><br>
 
 However, I do have some questions:<br>
-1) If the base function has y w/ a default value of None, should all functions in the same vein have the same? Right now, some have y=None and some only have y, but the docs still said they were 'optional'
-2) If a function doesn't have a parameters section, should I add one?
+1) If the base function has y and a default value of None, should all functions in the same vein have the same? Right now, some have y=None and some only have y, but the docs still said they were 'optional'<br>
+2) If a function doesn't have a parameters section, should I add one?<br>
 3) How do I deal with 'optional' when it is in reference to the possible outputs of a function?
 
 **January 15th**
