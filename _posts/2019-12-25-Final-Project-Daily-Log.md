@@ -192,6 +192,21 @@ However, I do have some questions:<br>
 
 **January 15th**
 
+Today was...interesting...to say the least. I made a lot of progress, and submitted my first [pull request](https://github.com/scikit-learn/scikit-learn/pull/16134). Most of the 'checks' were successful, except for the 'codecov/patch' check, which does not matter as much for documentation. I'm hoping that someone will review my PR tomorrow, but who knows. Please, please, let my PR be merged by the final block. <br><br>
+So, here's the things that were most helpful to me today:<br><br>
+
+$ git remote -v<br>
+This prints out the fetch and push of both the origin branches and the upstream branches.<br><br>
+
+$ git status<br>
+This is very helpful for looking at unmerged paths. Since someone else had committed to the master scikit-learn repo before me, \_validation.py could not be merged. To work around this, I followed the instructions on [this document](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github). This involved searching for '<<<<<<<' in a text editor (Sublime Text worked for me). Then I was finally able to push my latest commit to my pull request.<br><br>
+
+Unfortunately, I had a few linting errors and the style checks were failing. I managed to fix these by adding a backslash so that the program would realize that it was a line continuation and not a block quote. Here's a picture of what I did to solve the original circleci failure:<br><br>
+
+<img src="/images/jan16.png" width="800"/><br><br>
+
+While I don't have a circleci error message anymore, I still do have the codecov/patch error. However, since this error has not stopped other people from contributing (and merging) documentation, I am hopeful that this project will actually pan out.
+
 **January 16th**
 
 **January 17th**
