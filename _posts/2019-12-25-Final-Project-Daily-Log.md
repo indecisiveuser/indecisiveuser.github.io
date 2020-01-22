@@ -211,4 +211,6 @@ While I don't have a circleci error message anymore, I still do have the codecov
 
 Yay! Someone reviewed my PR, so it will probably be merged. However, I was confused about one of their comments, and so responded to them. Hopefully, the y default value/keyword argument will be solved soon. I'm looking forward to having my first PR merged. I will update when that happens.
 
-**January 17th**
+**January 22th**
+
+UPDATE: IT WAS MERGED!!!!!!!!
