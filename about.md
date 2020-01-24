@@ -4,11 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm Lila, a high school student. I've taken Computer Science and Machine Learning courses, and I love to write code.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
